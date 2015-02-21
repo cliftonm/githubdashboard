@@ -20,7 +20,7 @@ using Clifton.Extensions;
 
 using ForceDirectedGraph;
 
-// To see how many accesses are remaining: curl -i https://api.github.com/events?access_token=0c01559caff94377b7fba76634fbca966590a675 > foo.txt
+// To see how many accesses are remaining: curl -i https://api.github.com/events?access_token=[your access token] > foo.txt
 
 namespace GitHubDashboard
 {
@@ -103,8 +103,6 @@ namespace GitHubDashboard
 		/// Once the user authorizes the application, we get a "code" back from GitHub
 		/// We use that code to obtain the access token.
 		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
 		protected void OnNavigated(object sender, WebBrowserNavigatedEventArgs e)
 		{
 			if (e.Url.Query.Contains("?code"))
