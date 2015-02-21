@@ -1,2 +1,2 @@
 # githubdashboard
-A dashboard visualizing github public activty
+A dashboard visualizing github public activity
